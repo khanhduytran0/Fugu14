@@ -12,6 +12,14 @@ arm64 devices are not supported because the exploit to install the Fugu14 App do
 However, it is in theory possible to install the untether on them (e.g. via checkra1n).  
 Note that all of this code was written specifically for arm64e, so some changes are required to add arm64 support to the untether.
 
+Nowadays, installing Fugu14 can be simplified with TrollStore, eliminating the need of injecting code to Spotlight.app, unfortunately the developer abandoned it.
+
+## arm64 support in this fork
+
+- My personal changes is only tested on A9 14.3, may work on A8 and A10 but will need further changes for A11.
+- Only remount rootfs is working at the moment; loading trustcache is broken.
+- Use it at your own risk.
+
 # Features
 
 - The kernel exploit is extremely reliable (it will never trigger a kernel panic)
