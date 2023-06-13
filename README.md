@@ -18,6 +18,7 @@ Nowadays, installing Fugu14 can be simplified with TrollStore, eliminating the n
 
 - My personal changes is only tested on A9 14.3, may work on A8 and A10 but will need further changes for A11.
 - Only remount rootfs is working at the moment; loading trustcache is broken.
+- Unloading driver function does not seem to exist in arm64 kernels, so deep sleep bug persists until you reboot userspace.
 - Use it at your own risk.
 
 # Features
